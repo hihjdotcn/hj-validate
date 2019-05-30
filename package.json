@@ -1,0 +1,27 @@
+{
+  "name": "hj-validate",
+  "version": "1.0.0",
+  "description": "form validate package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hihjdotcn/hj-validate.git"
+  },
+  "keywords": [
+    "form",
+    "validate",
+    "phone",
+    "email",
+    "telephone",
+    "password"
+  ],
+  "author": "hj-lenno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hihjdotcn/hj-validate/issues"
+  },
+  "homepage": "https://github.com/hihjdotcn/hj-validate#readme"
+}
