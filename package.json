@@ -1,6 +1,6 @@
 {
   "name": "hj-validate",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "form validate package",
   "main": "index.js",
   "scripts": {
