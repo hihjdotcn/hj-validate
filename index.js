@@ -1,5 +1,5 @@
 "use strict";
-// 手机号
+// 手机号  Phone
 export function vPhone(str) {
   const reg = /^1[345678]\d{9}$/
   if (!reg.test(str)) {
@@ -7,7 +7,7 @@ export function vPhone(str) {
   }
 }
 
-// 固定电话号码
+// 固定电话号码 Telephone
 export function vTelephone(str) {
   const reg = /^0\d{2,3}-?\d{7,8}$/
   if (!reg.test(str)) {
@@ -15,7 +15,7 @@ export function vTelephone(str) {
   }
 }
 
-// 用户密码
+// 用户密码 Password
 export function vPassword(str) {
   if (!(/[\@#\!*$!]/.test(str) && /[a-z]/.test(str) && /[0-9]/.test(str) && /[A-Z]/.test(str))) {
     return '!@#*$，小写字母，大写字母，数字，均必须有至少一个！'
@@ -28,8 +28,8 @@ export function vPassword(str) {
   }
 }
 
-// 用户名
-export function vUserId (str) {
+// 用户名 UserName
+export function vUserName (str) {
   let regType = /^[a-zA-Z0-9_]*$/
   let regLength = /^[a-zA-Z0-9_]{5,24}$/
   if (!regType.test(str)) {
@@ -41,7 +41,7 @@ export function vUserId (str) {
   }
 }
 
-// 中国大陆身份证号
+// 中国大陆身份证号  Identity Card
 export function vIdentityCard (str) {
   let reg = /\d{15}(\d\d[0-9xX])?/
   if (!reg.test(str)) {

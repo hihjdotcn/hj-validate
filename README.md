@@ -8,7 +8,7 @@ npm install hj-validate
 
 ## Usage
 
-This validate function can validate "phone, telephone, email". Example for vue:
+This validate function can validate "Phone, Telephone, Password, UserName, IdentityCard, PostalCard, Email". Example for vue:
 
 ```javascript
 // Resource Code
@@ -43,7 +43,7 @@ export function vPassword(str) {
 }
 
 // 用户名 UserName
-export function vUserId (str) {
+export function vUserName (str) {
   let regType = /^[a-zA-Z0-9_]*$/
   let regLength = /^[a-zA-Z0-9_]{5,24}$/
   if (!regType.test(str)) {
