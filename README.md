@@ -11,7 +11,7 @@ yarn add hj-validate -S
 ## 介绍
 hj-validate 包括以下验证表单方法：
 ```javascript
-import {vPhone, vTelephone, vUserName, vPassword, vChinese, vEmail, vIdCard, vPostCard, vURI } from hj-validate
+import {vPhone, vTelephone, vUserName, vPassword } from hj-validate
 ```
 1. 手机号 vPhone
 2. 固定电话 vTelephone
@@ -21,7 +21,7 @@ import {vPhone, vTelephone, vUserName, vPassword, vChinese, vEmail, vIdCard, vPo
 6. 电子邮箱 vEmail
 7. 中国大陆身份证 vIdCard
 8. 中国大陆邮政编码 vPostCard
-9. 合法uri vURI
+9. 合法uri地址 vURI
 
 表单验证通过时，方法返回的是null; 表单验证未通过时，方法返回验证错误的提示信息。
 
@@ -45,9 +45,9 @@ console.log(vPhone(672)) // '请输入正确的手机号码'
  * @param {string || number}
  * @return {null || string}
  */
-import { vTel } from hj-validate
-console.log(vTel('021-2313423')) // null
-console.log(vTel('2313423')) // '请输入正确的固定电话号码'
+import { vTelephone } from hj-validate
+console.log(vTelephone('021-2313423')) // null
+console.log(vTelephone('2313423')) // '请输入正确的固定电话号码'
 ```
 
 #### 用户名 验证

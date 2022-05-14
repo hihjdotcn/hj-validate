@@ -1,7 +1,7 @@
 {
   "name": "hj-validate",
-  "version": "1.0.5",
-  "description": "form validate package for javaScript",
+  "version": "1.0.8",
+  "description": "Form verification method written in JavaScript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,7 +16,9 @@
     "phone",
     "email",
     "telephone",
-    "password"
+    "password",
+    "regexp",
+    "javaScript"
   ],
   "author": "hj-lenno",
   "license": "ISC",
