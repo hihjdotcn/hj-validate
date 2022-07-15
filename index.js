@@ -115,7 +115,7 @@
   */
  export function vEmail (str) {
    let reg = /^([a-z0-9_.-]+)@([\da-z.-]+)\.([a-z.]{2,6})$/
-   return reg.test(str) ? null : '请输入正确的电子邮箱格式'
+   return reg.test(str) ? null : '请输入正确的电子邮件地址'
  }
  
  /**
