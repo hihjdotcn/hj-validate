@@ -11,7 +11,7 @@ yarn add hj-validate -S
 ## 介绍
 hj-validate 包括以下验证表单方法：
 ```javascript
-import {vPhone, vTelephone, vUserName, vPassword } from hj-validate
+import {vPhone, vTelephone, vUserName, vPassword } from 'hj-validate'
 ```
 1. 手机号 vPhone
 2. 固定电话 vTelephone
@@ -33,7 +33,7 @@ import {vPhone, vTelephone, vUserName, vPassword } from hj-validate
  * @param {string || number}
  * @return {null || string}
  */
-import { vPhone } from hj-validate
+import { vPhone } from 'hj-validate'
 console.log(vPhone(139888877777)) // null
 console.log(vPhone(672)) // '请输入正确的手机号码'
 ```
@@ -45,7 +45,7 @@ console.log(vPhone(672)) // '请输入正确的手机号码'
  * @param {string || number}
  * @return {null || string}
  */
-import { vTelephone } from hj-validate
+import { vTelephone } from 'hj-validate'
 console.log(vTelephone('021-2313423')) // null
 console.log(vTelephone('2313423')) // '请输入正确的固定电话号码'
 ```
@@ -60,7 +60,7 @@ console.log(vTelephone('2313423')) // '请输入正确的固定电话号码'
  * }
  * @return {boolean}
  */
-import { vUserName } from hj-validate
+import { vUserName } from 'hj-validate'
 console.log(vUserName('hj-validate')) // null
 console.log(vUserName('hjvalid', {minLength: 10, maxLength:30})) // '字符需10～30个' 
 ```
@@ -77,7 +77,7 @@ console.log(vUserName('hjvalid', {minLength: 10, maxLength:30})) // '字符需10
  * }
  * @return { null || string }
  */
-import { vPassword } from hj-validate
+import { vPassword } from 'hj-validate'
 console.log(vPassword('Hj@898923')) // null
 console.log(vPassword('Hj12345678'), {
   minLength: 13,
@@ -95,7 +95,7 @@ console.log(vPassword('hj')) // 需包含数字,!@#*$ 特殊字符,大写字母,
  * @param {string}
  * @return {null || string}
  */
-import { vChinese } from hj-validate
+import { vChinese } from 'hj-validate'
 console.log(vChinese('王伟')) // null
 console.log(vChinese('hj王')) // '请输入中文字符'
 ```
@@ -107,7 +107,7 @@ console.log(vChinese('hj王')) // '请输入中文字符'
  * @param {string}
  * @return {null || string}
  */
-import { vEmail } from hj-validate
+import { vEmail } from 'hj-validate'
 console.log(vEmail('hj@126.com')) // null
 console.log(vEmail('hj@126com')) // '请输入正确的电子邮箱格式'
 ```
@@ -119,7 +119,7 @@ console.log(vEmail('hj@126com')) // '请输入正确的电子邮箱格式'
  * @param {string}
  * @return {null || string}
  */
-import { vIdCard } from hj-validate
+import { vIdCard } from 'hj-validate'
 console.log(vIdCard('310227198808073210')) // null
 console.log(vIdCard('481293849123')) // '请输入正确的身份证号码'
 ```
@@ -131,7 +131,7 @@ console.log(vIdCard('481293849123')) // '请输入正确的身份证号码'
  * @param {string}
  * @return {null || string}
  */
-import { vPostCard } from hj-validate
+import { vPostCard } from 'hj-validate'
 console.log(vPostCard('201200')) // null
 console.log(vPostCard('92009323')) // '请输入正确的邮政编码'
 ```
@@ -143,7 +143,7 @@ console.log(vPostCard('92009323')) // '请输入正确的邮政编码'
  * @param {string}
  * @return {null || string}
  */
-import { vURI } from hj-validate
+import { vURI } from 'hj-validate'
 console.log(vURI('https://www.hihj.cn')) // null
 console.log(vURI('http:dfda.com')) // '请输入正确的uri地址'
 ```
@@ -151,6 +151,3 @@ console.log(vURI('http:dfda.com')) // '请输入正确的uri地址'
 ## 提问或建议
 
 如在使用hj-validate中有疑问，可以将问题或建议发到github上，请点击 [github issues](https://github.com/hihjdotcn/hj-validate/issues).
-
-
-
